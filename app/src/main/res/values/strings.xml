@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HackIT</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">HackIT!</string>
+    <string name="ingresa_codigo">Ingresa código</string>
+    <string name="comprobar_codigo">Comprobar código</string>
+    <string name="hack">"hACK3d)(24!XS!gNum"</string>
+    <string name="error_codigo">Codigo no vallido</string>
+    <string name="codigo_correcto">¡Código correcto!</string>
+</resources>

@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hackit.signum.hackit.FragmentFormulario">
+
+
+    <LinearLayout
+        android:layout_width="0px"
+        android:layout_height="0px"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <com.yalantis.starwars.TilesFrameLayout
+        android:id="@+id/tiles_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:sw_animationDuration="1500"
+        app:sw_numberOfTilesX="35">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/name"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="34sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+            <android.support.design.widget.TextInputLayout
+
+                android:id="@+id/tilCodigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:counterOverflowTextAppearance="?android:textAppearanceLarge">
+
+                <EditText
+
+                    android:textColor="@color/white"
+                    android:text="@string/hack"
+                    android:id="@+id/etCodigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ingresa_codigo" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+               android:textAlignment="center"
+
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:textColor="@color/white"
+                android:background="@color/textob"
+                android:id="@+id/bComprobar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/comprobar_codigo" />
+        </LinearLayout>
+    </com.yalantis.starwars.TilesFrameLayout>
+
+</FrameLayout>
