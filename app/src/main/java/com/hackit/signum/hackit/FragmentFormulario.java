@@ -57,6 +57,7 @@ public class FragmentFormulario extends Fragment implements TilesFrameLayoutList
                 } else {
                     tilCodigo.setError(getString(R.string.error_codigo));
                     etCodigo.setText("");
+                    mTilesFrameLayout.startAnimation();
                 }
             }
         });
@@ -92,10 +93,16 @@ public class FragmentFormulario extends Fragment implements TilesFrameLayoutList
         getActivity().findViewById(R.id.tvEstado).setVisibility(View.VISIBLE);
         TextView tvEstado = (TextView) getActivity().findViewById(R.id.tvEstado);
         Animation myFadeInAnimation = AnimationUtils.loadAnimation(getContext(), R.anim.blink);
-        tvEstado.setText(getString(R.string.codigo_correcto));
+
+        if (etCodigo.getText().toString().trim().equals(getResources().getString(Params.CODAHACK))) {
+            tvEstado.setText(getString(R.string.codigo_correcto));
+            tvEstado.setTextColor(getResources().getColor(R.color.green));
+        } else {
+            tvEstado.setText(getString(R.string.codigo_incorrecto));
+            tvEstado.setTextColor(getResources().getColor(R.color.red));
+
+        }
         tvEstado.startAnimation(myFadeInAnimation);
-
-
     }
 
     /**
