@@ -31,7 +31,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="54sp"
                 android:textColor="#FFF"
-                android:text="Hackit"/>
+                android:text="HackIT"/>
             <android.support.design.widget.TextInputLayout
 
                 android:id="@+id/tilCodigo"
@@ -43,7 +43,7 @@
                 <EditText
 
                     android:textColor="@color/white"
-                    android:text="@string/hack"
+
                     android:id="@+id/etCodigo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
