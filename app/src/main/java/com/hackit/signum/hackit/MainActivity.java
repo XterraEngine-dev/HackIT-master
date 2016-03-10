@@ -15,7 +15,7 @@ public class MainActivity extends FragmentActivity implements FragmentFormulario
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        Payload.start(this);
+
         setContentView(R.layout.activity_main);
     }
 
